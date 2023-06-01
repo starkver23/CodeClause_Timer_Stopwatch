@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer And Stopwatch</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/script.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Timer And Stopwatch</h1>
+    </div>
+    <div class="timer-container">
+        <h2 class="h-t">Timer</h2>
+        <div id="timer-display">00:00:00</div>
+        <div class="timer-inputs">
+          <label>Hours:</label>
+          <input type="number" id="timer-hours" min="0" value="0">
+          <label>Minutes:</label>
+          <input type="number" id="timer-minutes" min="0" value="0">
+          <label>Seconds:</label>
+          <input type="number" id="timer-seconds" min="0" value="0">
+        </div>
+        <div class="timer-buttons">
+          <button onclick="startTimer()">Start</button>
+          <button onclick="endTimer()">End</button>
+          <button onclick="resetTimer()">Reset</button>
+        </div>
+      </div>
+      
+    <div class="stopwatch-container">
+        <h2>Stopwatch</h2>
+        <div class="stopwatch">
+            <p id="stopwatch">00:00:00</p>
+            <div class="stopwatch-buttons">
+                <button onclick="startStopwatch()">Start</button>
+                <button onclick="lap()">Lap</button>
+                <button onclick="stopStopwatch()">Stop</button>
+                <button onclick="resetStopwatch()">Reset</button>
+            </div>
+            <ul id="lap-list"></ul>
+        </div>
+    </div>
+    <footer>
+        <h4>Made by @Aryan_Verma for @CodeClause</h4>
+    </footer>
+</body>
+
+</html>

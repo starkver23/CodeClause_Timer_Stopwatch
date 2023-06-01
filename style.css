@@ -1,0 +1,161 @@
+body {
+    background-color: rgb(3, 252, 219);
+    font-family: Arial, sans-serif;
+}
+
+h1{
+    color: rgb(0, 0, 0);
+}
+
+footer {
+    text-align: center;
+    color: rgb(54, 54, 54);
+}
+
+.header {
+    text-align: center;
+    font-weight: 700;
+}
+
+.h-t {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+}
+
+.timer-container {
+    background-color: rgba(89, 0, 255, 0.643);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+}
+
+.timer-container h2 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#timer-display {
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.timer-inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.timer-inputs label {
+    color: #fff;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.timer-inputs input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+.timer-buttons {
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: center;
+
+}
+
+.timer-buttons button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    background-color: #fff;
+    color: #ffa700;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.timer-buttons button:first-child {
+    margin-right: 10px;
+}
+
+.timer-buttons button:hover {
+    background-color: #ffecb3;
+}
+
+.stopwatch-container {
+    background-color: #a200ff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.stopwatch-container h2 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.stopwatch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#stopwatch {
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.stopwatch-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.stopwatch-buttons button {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #009688;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.stopwatch-buttons button:not(:last-child) {
+    margin-right: 10px;
+}
+
+.stopwatch-buttons button:hover {
+    background-color: #b2dfdb;
+}
+
+#lap-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+#lap-list li {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 5px;
+}
